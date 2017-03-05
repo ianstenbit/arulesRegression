@@ -1,7 +1,7 @@
 Package: arulesRegression
 Version: 0.0.1
 Date: 2017-03-05
-Title: Classification Based on Association Rules
+Title: Regression Based on Association Rules
 Author: Ian Johnson [aut, cre, cph], Michael Hahsler [ctb]
 Authors@R: c(person("Ian", "Johnson", role=c("aut", "cre","cph"),
             email = "ianjjohnson@icloud.com"),
