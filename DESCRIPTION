@@ -1,0 +1,15 @@
+Package: arulesRegression
+Version: 0.0.1
+Date: 2017-03-05
+Title: Classification Based on Association Rules
+Author: Ian Johnson [aut, cre, cph], Michael Hahsler [ctb]
+Authors@R: c(person("Ian", "Johnson", role=c("aut", "cre","cph"),
+            email = "ianjjohnson@icloud.com"),
+            person("Michael", "Hahsler", role=c("ctb")))
+Description: Provides association-rule-based regression for factor data being used to predict continuous data.
+Maintainer: Ian Johnson <ianjjohnson@icloud.com>
+Depends: R (>= 3.2.0), Matrix (>= 1.2-0), arulesCBA (>= 1.1.0)
+Imports: caret, methods, testthat
+Suggests: e1071, gmodels
+License: GPL-3
+BugReports: https://github.com/ianjjohnson/arulesRegression
