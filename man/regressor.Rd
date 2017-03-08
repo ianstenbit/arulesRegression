@@ -10,7 +10,8 @@
 bCBA.regressor(formula, data, support = 0.2,
     confidence = 0.8, gamma = 0.05, cost = 10.0,
     num_levels = 20, verbose=FALSE, parameter = NULL,
-    control = NULL, sort.parameter=NULL, lhs.support=TRUE)
+    control = NULL, sort.parameter=NULL, lhs.support=TRUE,
+		disc.method="cluster", disc.categories=10)
 }
 
 \arguments{
@@ -23,6 +24,8 @@ bCBA.regressor(formula, data, support = 0.2,
   \item{parameter, control}{Optional parameter and control lists for apriori.}
   \item{sort.parameter}{Ordered vector of arules interest measures (as characters) which are used to sort rules in preprocessing.}
   \item{lhs.support}{Logical variable, which, when set to default value of True, indicates that LHS support should be used for rule mining.}
+	\item{disc.method}{Discretization method for arules discretize function for factorizing numeric input (default: "cluster")}
+	\item{disc.categories}{Number of discretization categories for arules discretize function for factorizing numeric input (default: 10)}
 }
 \details{
   Uses the bCBA algorithm from arulesCBA to build a transaction-boosted classifier with weighted rules for predicting the target variable. The weighted rules are used in regression by calculating the weighted sum of the means of the class values for the rules which match the new item.
